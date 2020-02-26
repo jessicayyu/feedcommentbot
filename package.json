@@ -1,0 +1,19 @@
+{
+  "name": "feedcommentbot",
+  "version": "1.0.0",
+  "description": "Bot cross-posts Reddit to Twitter and sets user flair on command.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "Reddit",
+    "Twitter"
+  ],
+  "author": "Jessica Yu",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "moment": "^2.24.0",
+    "snoowrap": "^1.21.0"
+  }
+}
