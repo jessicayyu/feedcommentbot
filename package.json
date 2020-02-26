@@ -4,7 +4,8 @@
   "description": "Bot cross-posts Reddit to Twitter and sets user flair on command.",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "npm test",
+    "start": "node index.js"
   },
   "keywords": [
     "Reddit",
@@ -13,7 +14,9 @@
   "author": "Jessica Yu",
   "license": "UNLICENSED",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "moment": "^2.24.0",
+    "simple-oauth2": "^3.3.0",
     "snoowrap": "^1.21.0"
   }
 }
