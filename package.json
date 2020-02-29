@@ -17,6 +17,11 @@
     "dotenv": "^8.2.0",
     "moment": "^2.24.0",
     "simple-oauth2": "^3.3.0",
-    "snoowrap": "^1.21.0"
+    "snoowrap": "^1.21.0",
+    "twitter": "^1.7.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jessicayyu/feedcommentbot.git"
   }
 }

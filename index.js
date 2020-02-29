@@ -2,6 +2,8 @@ require('dotenv').config();
 
 const snoowrap = require('snoowrap');
 
+
+
 const r = new snoowrap({
   userAgent: 'TeamSkullGrunt',
   clientId: process.env.CLIENT_ID,
@@ -19,5 +21,6 @@ r.getUnreadMessages({ limit: 3})
     let timestamp = moment.utc(msg.created_utc * 1000).local().format("ddd, MMM Do YYYY h:mmA");
     let truncated = msg.body.length > 150 ? msg.body.slice(1,150) : msg.body;
     console.log(msg.author.name + ' ' + timestamp + ' ' + msg.id + '\n' + truncated  + '\n');
+    // r.getMessage(msg.id).markAsRead();
   })
   .catch(console.error)
