@@ -2,7 +2,14 @@ require('dotenv').config();
 
 const snoowrap = require('snoowrap');
 
-
+var Twitter = require('twitter');
+ 
+var client = new Twitter({
+  consumer_key: '',
+  consumer_secret: '',
+  access_token_key: '',
+  access_token_secret: ''
+});
 
 const r = new snoowrap({
   userAgent: 'TeamSkullGrunt',
@@ -11,7 +18,6 @@ const r = new snoowrap({
   username: process.env.REDDIT_USER,
   password: process.env.REDDIT_PASS
 });
-
 
 var moment = require('moment');
 moment().format();
